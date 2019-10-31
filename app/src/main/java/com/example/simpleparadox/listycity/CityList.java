@@ -11,18 +11,6 @@ public class CityList {
     private List<City> cities = new ArrayList<>();
 
     /**
-     * This adds a city to the list if the city does not exist
-     * @param city
-     *      This is a candidate city to add
-     */
-    public void add(City city) {
-        if (hasCity(city)) {
-            throw new IllegalArgumentException();
-        }
-        cities.add(city);
-    }
-
-    /**
      * This returns a sorted list of cities
      * @return
      *      Return the sorted list
